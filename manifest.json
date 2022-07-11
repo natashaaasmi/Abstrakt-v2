@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Abstrakt",
+    "description": "In-browser definition/summarization engine",
+    "version": "2",
+    "content_scripts": [
+        {
+            "js": ["content.js","gpt3.js","inject.js"],
+            "matches": ["<all_urls>"]
+            
+        }
+        
+    ],
+    "action": {
+        "default_icon": "128-2.png",
+        "default_popup": "popup.html"
+    },
+    "author": "Natasha Asmi",
+    "background": {
+        "service_worker": "background.js"
+    }, 
+    "permissions": ["storage", "activeTab", "scripting", "contextMenus"]
+}
+

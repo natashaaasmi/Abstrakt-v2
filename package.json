@@ -1,0 +1,24 @@
+{
+  "name": "backend_abstrakt.js",
+  "version": "1.0.0",
+  "description": "express installation for gpt3",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "got": "^11.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natashaaasmi/test-msg-send.git"
+  },
+  "bugs": {
+    "url": "https://github.com/natashaaasmi/test-msg-send/issues"
+  },
+  "homepage": "https://github.com/natashaaasmi/test-msg-send#readme"
+}
