@@ -27,8 +27,9 @@ async function getCompletion(prompt) {
     "temperature": 0.6,
     "frequency_penalty": 0.5
   };
+  //replace default text with GPT3 API key
   const headers = {
-    'Authorization': `Bearer ${'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'}`,
+    'Authorization': `Bearer ${PUT_API_KEY_HERE}`,
     'Content-Type': 'application/json' 
   };
 
