@@ -6,10 +6,12 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     sendResponse({ final: "gpt3 received message from content" })
     getCompletion(request.data).then((resolve, reject) => {
       // resolve is an array with the first element being a boolean indicating success or failure
-      // and the second element being the completion returned by OpenAI api
+      // and the second element being the completion returned by OpenAI api:
+      //if success:
       if (resolve[0]) {
         //this will send the completion back to background as a response
         sendResponse({ final: resolve[1] });
+      //if failure:
       } else {
         sendResponse({ final: "Error" });
       }
