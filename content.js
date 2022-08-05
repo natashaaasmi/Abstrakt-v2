@@ -4,7 +4,7 @@ chrome.runtime.onMessage.addListener(
     if (request.id=== "contextMenuClicked") {
       //send response to background
       sendResponse({copy:"message received"})
-      //test selection function
+      //gets selected text
       var selectedText = document.getSelection().toString();
       console.log(selectedText);
       //send message w/ selected text to gpt3.js
